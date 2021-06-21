@@ -6,7 +6,7 @@
         <br />
         <h1>Formulari Vue</h1>
         <br />
-        <form id="myForm" @submit.prevent>
+        <form @submit.prevent>
           <Base
             :labelProp="'Nom'"
             :typeProp="'text'"
