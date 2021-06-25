@@ -102,7 +102,7 @@ export default {
         case "Contrasenya":
           if (
             this.valorModel1.match(
-              /^(?=.*[a-z])(?=.*[A-Z])[A-Za-z\d$@ñ!%*?&+¿_]{6,13}$/
+              /^(?=.*?[A-Z])(?=.*?[a-z]).{6,13}$/
             )
           ) {
             this.validation = true;
@@ -124,7 +124,7 @@ export default {
           if (
             this.valorModel1 === this.valorModel2 &&
             this.valorModel2.match(
-              /^(?=.*[a-z])(?=.*[A-Z])[A-Za-z\d$@ñ!%*?&+¿_]{6,13}$/
+              /^(?=.*?[A-Z])(?=.*?[a-z]).{6,13}$/
             )
           ) {
             this.validation = true;
