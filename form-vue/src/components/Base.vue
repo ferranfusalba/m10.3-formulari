@@ -108,7 +108,7 @@ export default {
 
       switch (this.labelProp) {
         case "Nom":
-          if (this.valorModel.match(/^[A-Za-z]{6,13}$/)) {
+          if (this.valorModel.match(/^[A-ZÇÑa-zçñ]{6,13}$/)) {
             this.validation = true;
             this.descriptionProp2 = this.validation;
             this.objB.value = this.valorModel;
